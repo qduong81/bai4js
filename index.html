@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2>In ra các số chẵn từ 0 - 10</h2>
+    <button onclick="inSoChan()">In số chẵn</button>
+
+    <p id="ketQua"></p>
+
+    <script>
+        function inSoChan() {
+            let ketQua = "";
+            for (let i = 0; i <= 10; i++) {
+                if (i % 2 === 0) {
+                    ketQua += i + " ";
+                }
+            }
+            document.getElementById("ketQua").textContent = ketQua.trim();
+        }
+    </script>
+</body>
+</html>
